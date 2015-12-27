@@ -30,6 +30,7 @@ Contents:
    tutorial
    standard/index
    tenders
+   planning
    procuring
    bidding
    meat

@@ -1,0 +1,94 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openprocurement.api 0.10a2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-22 22:51+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Ukrainian <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/planning.rst:5
+msgid "Retrieving Plan Information"
+msgstr "Отримання інформації про план закупівель"
+
+#: ../../source/planning.rst:8
+msgid "Getting list of all plans"
+msgstr "Отримати список всіх планів закупівель"
+
+#: ../../source/planning.rst:18
+msgid "Sorting"
+msgstr "Сортування"
+
+#: ../../source/planning.rst:19
+msgid "Plans retuned are sorted by modification time."
+msgstr "Повернені планизакупівлі просортовані за датою модифікації."
+
+#: ../../source/planning.rst:22
+msgid "Limiting number of Plans returned"
+msgstr ""
+
+#: ../../source/planning.rst:24
+msgid ""
+"You can control the number of `data` entries in the plans feed (batch size) "
+"with `limit` parameter. If not specified, data is being returned in batches "
+"of 100 elements."
+msgstr ""
+
+#: ../../source/planning.rst:29
+msgid "Batching"
+msgstr ""
+
+#: ../../source/planning.rst:31
+msgid ""
+"The response contains `next_page` element with the following properties:"
+msgstr ""
+
+#: ../../source/planning.rst:34
+msgid ""
+"This is the parameter you have to add to the original request you made to "
+"get next page."
+msgstr ""
+
+#: ../../source/planning.rst:38
+msgid ""
+"This is path section of URL with original parameters and `offset` parameter "
+"added/replaced above."
+msgstr ""
+
+#: ../../source/planning.rst:42
+msgid "The full version of URL for next page."
+msgstr ""
+
+#: ../../source/planning.rst:44
+msgid ""
+"If next page request returns no data (i.e. empty array) then there is little"
+" sense in fetching further pages."
+msgstr ""
+
+#: ../../source/planning.rst:48
+msgid "Synchronizing"
+msgstr ""
+
+#: ../../source/planning.rst:50
+msgid ""
+"It is often necessary to be able to syncronize central database changes with"
+" other database (we'll call it \"local\").  The default sorting \"by "
+"modification date\" together with Batching mechanism allows one to implement"
+" synchronization effectively.  The synchronization process can go page by "
+"page until there is no new data returned.  Then the synchronizer has to "
+"pause for a while to let central database register some changes and attempt "
+"fetching subsequent page.  The `next_page` guarantees that all changes from "
+"the last request are included in the new batch."
+msgstr ""
+
+#: ../../source/planning.rst:59
+msgid "The safe frequency of synchronization requests is once per 5 minutes."
+msgstr ""
+
+#: ../../source/planning.rst:62
+msgid "Reading the individual plan information"
+msgstr ""
